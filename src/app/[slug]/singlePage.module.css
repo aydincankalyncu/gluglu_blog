@@ -31,6 +31,13 @@
 
 .userTextContainer{
   display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--softTextColor);
+}
+
+.username{
+  font-weight: bold;
 }
 
 .avatar{
@@ -46,4 +53,52 @@
 
 .image{
   object-fit: cover;
+}
+
+.content{
+  display: flex;
+  gap: 50px;
+}
+
+.post{
+  flex:5;
+  margin-top: 60px;
+}
+
+.description p{
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width:1536px){
+  .title{
+    font-size: 54px;
+  }
+}
+
+@media screen and (max-width:1280px){
+  .title{
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width:1024px){
+  .title{
+    font-size: 42px;
+  }
+
+  .imageContainer{
+    display: none;
+  }
+}
+
+@media screen and (max-width:640px){
+  .title{
+    font-size: 36px;
+  }
+
+  .description{
+    font-size: 18px;
+  }
 }
