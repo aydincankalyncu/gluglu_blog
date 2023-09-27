@@ -6,14 +6,9 @@ import axios from "axios";
 
 const getData = async (page, cat) => {
   try {
-    console.log("Page number = ", page);
     const result = await axios.get(
       `http://localhost:3000/posts?page=${page}&cat=${cat || ""}`
     );
-    // const result = await axios.get("http://localhost:3000/posts?page=2", {
-    //   params: {"page": page}
-    // });
-    // console.log(result.data.data);
     return result.data.data;
   } catch (error) {
     console.error(error);
